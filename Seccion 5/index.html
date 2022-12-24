@@ -142,41 +142,44 @@
         </div>
 
         <section> <!--Seccion Contactos -->
-            <h2>Contacto</h2>
+            <h2 class="contacto">Contacto</h2>
 
-            <form action="">
+            <form action="" class="formulario">
                 <fieldset>
                     <legend>Contactame llenando todos los campos</legend>
 
-                    <div>
+                    <div class="contenedor-campos">
+                        <div class="campo">
                         <label for="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Tu nombre">
-                    </div>
-
-                    <div>
+                        <input class="input-text" type="text" id="name" placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="campo">
                         <label for="tel">Telefono</label>
-                        <input type="tel" id="tel" placeholder="Tu telefono">
-                    </div>
-
-                    <div>
+                        <input class="input-text" type="tel" id="tel" placeholder="Tu telefono">
+                        </div>
+                        
+                        <div class="campo">
                         <label for="email">Correo</label>
-                        <input type="email" id="email" placeholder="Tu correo">
+                        <input class="input-text" type="email" id="email" placeholder="Tu correo">
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="input-text" placeholder="Escribe tus comentarios aqui." id="mensaje"></textarea>
+                        </div>
+                    </div> <!-- Cierre contenedor de los campos -->
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit">
                     </div>
 
-                    <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div>
-                        <input type="submit">
-                    </div>
                 </fieldset>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados Miguel Buendia.</p>
     </footer>
 </body>
