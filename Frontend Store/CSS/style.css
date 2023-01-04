@@ -267,14 +267,46 @@ h3
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
 }
 
 .nosotros__imagen
 {
-    grid-column: 2 / 3;
+    max-height: 45rem;
 }
 
-.nosotros__texto
+.nosotros__imagen--img
 {
-    grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;    
+}
+
+@media (max-width: 768px)
+{
+    .nosotros
+    {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+        padding: 2rem;
+    }
+
+    .nosotros__imagen
+    {
+        grid-row: 1 / 2;
+    }
+
+    .nosotros__contenido
+    {
+        grid-row: 2 / 3;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 420px)
+{
+    .nosotros__imagen
+    {
+        width: 100%;
+    }
 }
