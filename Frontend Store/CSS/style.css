@@ -285,7 +285,7 @@ h3
 {
     .nosotros
     {
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         grid-template-columns: repeat(1, 1fr);
         row-gap: 2rem;
         padding: 2rem;
@@ -303,10 +303,43 @@ h3
     }
 }
 
+/* Seccion por que comprar con nosotros */
+
+.comprar__titulo
+{
+    margin-top: 4rem;
+}
+
+.bloques
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.bloque
+{
+    text-align: center;
+}
+
+.bloque__titulo
+{
+    margin: 0;
+}
+
+
+@media (max-width: 768px)
+{
+    .bloques
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 420px)
 {
-    .nosotros__imagen
+    .bloques
     {
-        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
